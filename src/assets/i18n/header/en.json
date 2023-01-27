@@ -1,0 +1,10 @@
+{
+  "hello": "transloco en",
+  "dynamic": "transloco {{value}}",
+  "read more": "Read more...",
+  "home page": "Home page",
+  "about us": "About us",
+  "contact": "Contact",
+  "our products": "Our products",
+  "gallery": "Gallery"
+}

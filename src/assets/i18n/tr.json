@@ -1,0 +1,10 @@
+{
+  "hello": "transloco tr",
+  "dynamic": "transloco {{value}}",
+  "read more": "Daha fazla oku...",
+  "home page": "Ana sayfa",
+  "about us": "Hakkımızda",
+  "contact": "İleişim",
+  "our products": "Ürünlerimiz",
+  "gallery": "Galeri"
+}

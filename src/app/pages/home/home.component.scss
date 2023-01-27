@@ -1,0 +1,123 @@
+@mixin media() {
+  @media (min-width: 768px) {
+      @content;
+  }
+}
+
+body, html {
+font-family: 'Vollkorn', serif;
+font-weight: 400;
+line-height: 1.3;
+font-size: 16px;
+}
+
+.siteTitle {
+display: block;
+font-weight: 900;
+font-size: 30px;
+margin: 20px 0;
+
+@include media {
+  font-size: 60px;
+}
+}
+
+header,
+main,
+footer {
+max-width: 960px;
+margin: 0 auto;
+}
+
+.card {
+height: 400px;
+position: relative;
+padding: 20px;
+box-sizing: border-box;
+display: flex;
+align-items: flex-end;
+text-decoration: none;
+border: 4px solid #b0215e;
+margin-bottom: 20px;
+background-image: url('https://cdn.ferrari.com/cms/network/media/img/resize/6193d2885405741826fc8877-ferrari-daytona-sp3-main-cover-desk?width=1920&height=1600');
+  background-size: cover;
+
+@include media {
+  height: 500px;
+}
+}
+
+.inner {
+height: 50%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background: #ffffffd9;
+box-sizing: border-box;
+padding: 40px;
+
+@include media {
+  width: 50%;
+  height: 100%;
+}
+}
+
+.title {
+font-size: 24px;
+color: black;
+text-align: center;
+font-weight: 700;
+color: #181818;
+text-shadow: 0px 2px 2px #a6f8d5;
+position: relative;
+margin: 0 0 20px 0;
+
+@include media {
+  font-size: 30px;
+}
+}
+
+.subtitle {
+color: #b0215e;
+text-align: center;
+}
+
+.card2 {
+background-image: url('https://cdn.ferrari.com/cms/network/media/img/resize/5fa92764bd92fd1c7fc25e54-ferrari-sf90-spider-intro-desk-opt?width=1920&height=1600');
+}
+
+.card3 {
+background-image: url('https://cdn.ferrari.com/cms/network/media/img/resize/5d77781c037869546bcd6887-ferrari-monza-sp1-cover-desk?width=1920&height=1600');
+}
+
+footer {
+display: flex;
+justify-content: center;
+margin: 40px 0;
+}
+
+.footerLink {
+margin-right: 12px;
+color: #181818;
+text-decoration: none;
+position: relative;
+
+&:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background-color: rgba(#b0215e, 0.3);
+  left: 0;
+  bottom: 0;
+}
+
+&:last-child {
+  margin-right: 0;
+}
+}
+
+.readBtn {
+  background-color: #ffffffd9;
+}

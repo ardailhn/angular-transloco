@@ -1,0 +1,16 @@
+<div class="header">
+  <div class="logo">
+    <img
+      src="https://upload.wikimedia.org/wikipedia/tr/thumb/c/c0/Scuderia_Ferrari_Logo.svg/1200px-Scuderia_Ferrari_Logo.svg.png">
+  </div>
+  <ul class="menu">
+    <li *ngFor="let item of menuItems">
+      <a [routerLink]="'/'+item.seName">{{item.name.toLowerCase() | transloco}}</a>
+    </li>
+  </ul>
+  <div class="lang">
+    <select (change)="changeSiteLanguage($event)">
+      <option *ngFor="let language of languageList" [value]="language.code">{{language.label}}</option>
+    </select>
+  </div>
+</div>
